@@ -1,9 +1,9 @@
-# SKILL
 ---
 name: runway-dls
 description: Design token definitions, usage rules, and project-specific style profiles for CAG, iSC, and CA.com UI. Load this skill whenever generating, reviewing, or writing code/designs for any CAG product.
 version: 1.0.0
 ---
+
 ## 0. Process & Usage Rules
 
 For grid enforcement, column mapping, nested grid math, self-critique methodology, font-loading checks, icon/emoji rules, and code generation stack requirements, see [runway-dls-usage-guide.md](runway-dls-usage-guide.md).

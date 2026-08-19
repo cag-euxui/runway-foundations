@@ -14,7 +14,7 @@ For grid enforcement, column mapping, nested grid math, self-critique methodolog
 | --- | --- | --- |
 | `CAG` | Changi Airport Group | Parent organisation. Default design system owner. |
 | `iSC` | iShopChangi | CAG e-commerce product. Uses Fuchsia as primary brand colour instead of Purple. |
-| `CA.com` | Changi Airport Website | The main changiairport.com consumer website. Uses Oyster/Brown palettes for branded surfaces. |
+| `CA.com` | Changi Airport Website | The main changiairport.com consumer website. Uses Oyster/Brown palettes for branded background surfaces. |
 
 **Primary brand colour:** Purple (`Purple Primary/600`)
 **Primary brand colour for iShopChangi (iSC)**: Fuchsia/600 (replaces Purple Primary only for iSC-related projects)

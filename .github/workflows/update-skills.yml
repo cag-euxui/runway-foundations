@@ -3,20 +3,20 @@ name: Sync Lovable Skills
 on:
   push:
     branches:
-      - main # Triggers instantly whenever you push changes to your main branch
-  workflow_dispatch: # Allows you to manually click a button in GitHub to trigger a sync
+      - main # Runs instantly whenever you push changes to your main branch
+  workflow_dispatch: # Allows you to manually trigger it via the Actions tab
 
 jobs:
   update-skills:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Grants the runner permission to update repository skill records
+      contents: write # Grants the runner permission to update skill records
     
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Trigger Instant Lovable Skills Update
-        uses: iyaki/skills-update-action@v1
+        uses: iyaki/skills-update@v1 # <-- FIX: Removed "-action" to match the actual repo name
         with:
-          working-directory: '.' # Scans your root directory for SKILL.md changes
+          working-directory: '.' 

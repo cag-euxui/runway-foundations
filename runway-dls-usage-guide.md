@@ -8,7 +8,7 @@ This file defines HOW to apply the Runway DLS correctly. It contains process, gr
 
 ## 1. Component Repo Lookup Process
 
-Before generating any NAMED component, check the repo first: Repo: [https://github.com/Jiajjang/runway-dls-docs.git](https://github.com/Jiajjang/runway-dls-docs.git)
+Before generating any NAMED component, check the repo first: Repo: [https://github.com/cag-euxui/runway-md-components.git](https://github.com/cag-euxui/runway-md-components.git)
 
 1. Look for the component’s specific .md file under docs/{{category}}/.
 2. If found, apply its Usage Guidelines section exactly.

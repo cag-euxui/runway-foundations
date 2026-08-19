@@ -622,7 +622,7 @@ Use these profiles only when a project has an explicitly defined experience type
 
 Detailed usage guidelines, variants, behaviour rules, and dos/don’ts for each CAG DLS component are documented in the GitHub repository:
 
-**Repo:** `https://github.com/Jiajjang/runway-dls-docs`
+**Repo:** `https://github.com/cag-euxui/runway-md-components.git`
 
 **RULE:** Before generating, reviewing, or writing code for any named CAG DLS component, retrieve the relevant `.md` file from this repo and apply its Usage Guidelines section.
 **RULE:** If the component is not found in the repo, fall back to the token rules in this file only — do not invent component behaviour.

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    background-color: #fcfcfc; /* Colors/Grey/25 */
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+    color: #454545; /* Colors/Grey/700 — primary body text */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #7a35b0; /* ring-brand */
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Frosted-glass utility mirroring backdrop-light-blur-md
+     (fill #FFFFFF60 — 8-digit hex, 16px blur). Used only on overlay chrome. */
+  .backdrop-light-blur-md {
+    background-color: #ffffff60;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  /* Purple Primary hero gradient — built from Purple Primary/500-800
+     to stay inside the DLS interactive brand family. */
+  .bg-hero-purple {
+    background: radial-gradient(
+        120% 80% at 50% 0%,
+        #ab76d5 0%,
+        #8f58be 40%,
+        #7a35b0 65%,
+        #4d0a76 100%
+      );
+  }
+
+  /* Decorative confetti pattern.
+     Each stop uses either Grey/25 (#FCFCFC) or Gold/500 (#CBAC7E),
+     at alpha percentages from the DLS Grey Alpha scale (30, 40, 60).
+     Non-emoji, illustrative only. */
+  .bg-confetti {
+    background-image:
+      radial-gradient(circle at 12% 20%, rgba(252, 252, 252, 0.4) 0 2px, transparent 2px),
+      radial-gradient(circle at 78% 30%, rgba(203, 172, 126, 0.6) 0 2.5px, transparent 2.5px),
+      radial-gradient(circle at 30% 70%, rgba(252, 252, 252, 0.3) 0 1.5px, transparent 1.5px),
+      radial-gradient(circle at 88% 78%, rgba(252, 252, 252, 0.4) 0 2px, transparent 2px),
+      radial-gradient(circle at 55% 12%, rgba(203, 172, 126, 0.4) 0 1.5px, transparent 1.5px),
+      radial-gradient(circle at 62% 55%, rgba(252, 252, 252, 0.3) 0 2px, transparent 2px);
+    background-size: 100% 100%;
+  }
+}
